@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #45813c;
+    border-bottom: 2px solid #47b743;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+ol {
+    counter-reset: item;
+    padding-left: 20px;
+}
+
+ol > li {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #47b743;
+}
+
+ol ol {
+    margin-top: 8px;
+    padding-left: 30px;
+}
+
+ol ol li {
+    list-style-type: none;
+    counter-increment: none;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ol ol li strong {
+    display: block;
+    background-color: #c9fea9;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border-left: 4px solid #47b743;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+ol ol ol li strong {
+    background-color: #f0f7fd;
+    border-left-color: #47b743;
+}
+
+br {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #c9fea9;
+}
+
+.encabezado th {
+    text-align: center;
+}
+
+.benefits-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.benefits-table td {
+    padding: 8px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.erp-comparison {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.erp-comparison th, 
+.erp-comparison td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.erp-comparison th {
+    background-color: #c9fea9;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    ol ol li strong {
+        padding: 10px;
+    }
+    
+    .benefits-table td {
+        width: 100%;
+        display: block;
+    }
+}

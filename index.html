@@ -3,95 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-        }
-        
-        ol {
-            counter-reset: item;
-            padding-left: 20px;
-        }
-        
-        ol > li {
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #2980b9;
-        }
-        
-        ol ol {
-            margin-top: 8px;
-            padding-left: 30px;
-        }
-        
-        ol ol li {
-            list-style-type: none;
-            counter-increment: none;
-            font-weight: normal;
-            color: #333;
-            margin-bottom: 10px;
-            position: relative;
-        }
-        
-        ol ol li strong {
-            display: block;
-            background-color: #e8f4fc;
-            padding: 12px 15px;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        ol ol ol li strong {
-            background-color: #f0f7fd;
-            border-left-color: #2980b9;
-        }
-        
-        br {
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            ol ol li strong {
-                padding: 10px;
-            }
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        caption {
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
     <title>Preguntas sobre ERP</title>
 </head>
 <body>
@@ -122,29 +34,29 @@
             <li><strong>Se basa en concetar y sincronizar diferentes modulos para que trabajen de forma conjunta y eficiente</strong></li>
             <li>
                 <strong>Beneficios:</strong>
-                <table border="1" style="width:100%; border-collapse: collapse; margin-top:10px;">
+                <table class="benefits-table">
                     <tr>
-                        <td style="padding:8px; vertical-align:top; width:50%;">
+                        <td>
                             <strong>Mayor eficiencia:</strong><br>
                             Al unificar diferentes procesos en un solo sistema, se reduce la duplicación de esfuerzos y se agilizan las operaciones.
                         </td>
-                        <td style="padding:8px; vertical-align:top; width:50%;">
+                        <td>
                             <strong>Mejor flujo de información:</strong><br>
                             La integración permite compartir datos entre diferentes módulos, evitando la pérdida de información y facilitando la toma de decisiones.
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding:8px; vertical-align:top;">
+                        <td>
                             <strong>Mayor control y visibilidad:</strong><br>
                             Se obtiene una visión completa del sistema, lo que facilita el seguimiento de los procesos y la gestión de recursos.
                         </td>
-                        <td style="padding:8px; vertical-align:top;">
+                        <td>
                             <strong>Reducción de errores:</strong><br>
                             Al evitar la necesidad de introducir datos manualmente en diferentes sistemas, se minimizan los errores de transcripción y se mejora la precisión.
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding:8px; vertical-align:top;" colspan="2">
+                        <td colspan="2">
                             <strong>Mayor flexibilidad y escalabilidad:</strong><br>
                             Los sistemas integrados suelen ser más fáciles de adaptar a las necesidades cambiantes de la empresa y de ampliar su funcionalidad
                         </td>
@@ -156,8 +68,8 @@
 
     <h1>2. Comparación de ERPs</h1>
     
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
+    <table class="erp-comparison">
+        <thead class="encabezado">
           <tr>
             <th>Aspecto</th>
             <th>SAP ERP</th>
@@ -197,7 +109,7 @@
             <td><strong>Requisitos de hardware</strong></td>
             <td>
               - CPU: 16-32 núcleos Xeon<br>
-              - RAM: 128–256 GB<br>
+              - RAM: 128-256 GB<br>
               - Disco: SSD, 1 TB mínimo<br>
               - SO: Linux (SUSE/Red Hat)<br>
               - BD: SAP HANA<br>
@@ -205,16 +117,16 @@
             </td>
             <td>
               - CPU: Intel i5/i7 o Xeon (4+ núcleos)<br>
-              - RAM: 16–32 GB<br>
+              - RAM: 16-32 GB<br>
               - Disco: 500 GB SSD<br>
               - SO: Windows Server / Windows 10+<br>
               - BD: SQL Server<br>
               - Cloud: solo requiere navegador
             </td>
             <td>
-              - CPU: 2–4 núcleos<br>
-              - RAM: 4–16 GB<br>
-              - Disco: 100–250 GB SSD<br>
+              - CPU: 2-4 núcleos<br>
+              - RAM: 4-16 GB<br>
+              - Disco: 100-250 GB SSD<br>
               - SO: Linux (Ubuntu)<br>
               - BD: PostgreSQL<br>
               - Cloud (Odoo.sh): solo navegador
